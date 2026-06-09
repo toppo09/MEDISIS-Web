@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "vite build --base=/MEDISIS/",
+    "build": "vite build --base=/MEDISIS-Web/"
     "start": "node dist/server.cjs",
     "clean": "rm -rf dist server.js",
     "lint": "echo 'skipping lint'"
