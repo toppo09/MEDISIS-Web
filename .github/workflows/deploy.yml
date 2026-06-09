@@ -26,7 +26,11 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
+          cache: 'npm'
+
+      - name: Clean package-lock to avoid conflicts
+        run: rm -f package-lock.json
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
