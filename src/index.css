@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Outfit", sans-serif;
+  
+  --color-mint-50: #f0fdf7;
+  --color-mint-100: #e0f9ec;
+  --color-mint-200: #c1f2da;
+  --color-mint-300: #8ee5be;
+  --color-mint-400: #55cf9c;
+  --color-mint-500: #2ebd7e;
+  --color-mint-600: #209d66;
+  --color-mint-700: #1a7e53;
+  --color-mint-800: #186443;
+  --color-mint-900: #155239;
+}
+
+/* Custom polygonal background grid and floating geometric shapes */
+.polygon-bg {
+  background-color: #f3f5f6; /* light gray default */
+  background-image: 
+    linear-gradient(135deg, rgba(224, 249, 236, 0.4) 0%, transparent 50%),
+    linear-gradient(225deg, rgba(240, 253, 247, 0.6) 0%, transparent 55%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0.8) 0%, transparent 40%);
+  position: relative;
+}
+
+.poly-shape-1 {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  background: linear-gradient(135deg, rgba(142, 229, 190, 0.15) 0%, rgba(193, 242, 218, 0.05) 100%);
+}
+
+.poly-shape-2 {
+  clip-path: polygon(0 15%, 100% 0, 85% 85%, 15% 100%);
+  background: linear-gradient(180deg, rgba(142, 229, 190, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.poly-shape-3 {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  background: linear-gradient(45deg, rgba(193, 242, 218, 0.2) 0%, rgba(255,255,255,0) 70%);
+}
+
+.poly-card {
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%);
+}
+

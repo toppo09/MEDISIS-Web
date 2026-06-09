@@ -1,0 +1,6 @@
+{
+  "name": "MEDISIS：病院AI導入要件定義書開発スタジオ",
+  "description": "厚生労働省「医療情報システムの安全管理に関するガイドライン（第6.0版）」に準拠した、丸々病院におけるセキュアなAI処方安全監査および労働制限を組み込んだ医療勤務シフト自動生成の確認ポータル環境。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
